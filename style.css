@@ -1,0 +1,324 @@
+/* ================================
+   GOOGLE FONT
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ================================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #123f36, #071917);
+  color: #ecfff6;
+  min-height: 100vh;
+}
+
+/* ================================
+   HEADER
+================================ */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: rgba(8, 31, 28, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2ecc71, #a8ff78);
+  color: #03110e;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(46, 204, 113, 0.6);
+}
+
+/* ================================
+   BANNER
+================================ */
+.banner {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background:
+    linear-gradient(180deg, rgba(15, 61, 53, 0.6), rgba(7, 25, 23, 0.95)),
+    radial-gradient(circle at top, #2ecc71, transparent 60%);
+}
+
+.banner h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.15;
+  background: linear-gradient(90deg, #2ecc71, #b6ff9b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(46, 204, 113, 0.8);
+}
+
+.banner p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d8fff0;
+}
+
+.cta {
+  margin-top: 16px;
+  padding: 11px 32px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #2ecc71, #a8ff78);
+  color: #05261e;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(46, 204, 113, 0.7);
+  transition: all 0.25s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 0 28px rgba(46, 204, 113, 0.95);
+}
+
+.welcome {
+  padding: 26px 20px;
+  text-align: center;
+}
+
+.welcome h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #9bffce;
+  text-shadow: 0 0 14px rgba(155, 255, 206, 0.6);
+}
+
+.welcome p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #cffff0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 18px 16px 90px;
+}
+
+.card {
+  background: linear-gradient(180deg, #ffffff, #f2f2f2);
+  border-radius: 22px;
+  padding: 16px 14px;
+  text-align: center;
+  color: #111;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 2px rgba(46, 204, 113, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 2px rgba(46, 204, 113, 0.45);
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2ecc71;
+}
+
+.card span {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #666;
+}
+
+.card button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 9px 0;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #2ecc71, #a8ff78);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #04271f;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(46, 204, 113, 0.6);
+  transition: all 0.25s ease;
+}
+
+.card button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 18px rgba(46, 204, 113, 0.9);
+}
+
+.card.out {
+  opacity: 0.55;
+}
+
+.card.out button {
+  background: #aaa;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.55);
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  color: #b5ffe4;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(8, 31, 28, 0.95);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  font-size: 13px;
+  backdrop-filter: blur(6px);
+}
+
+@media (min-width: 768px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover h3 {
+  color: #2ecc71;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.chat-wa {
+  background: linear-gradient(135deg, #2ecc71, #a8ff78);
+  color: #04271f;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(46,204,113,.7);
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 70px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #25d366, #7dffb3);
+  color: #04271f;
+  border-radius: 50%;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 0 18px rgba(37,211,102,.9);
+  z-index: 999;
+}
+
+.card {
+  background: linear-gradient(180deg, #ffffff, #f1f1f1);
+  border-radius: 22px;
+  padding: 16px 14px;
+  text-align: center;
+  color: #111;
+
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.35),
+    inset 0 -4px 0 rgba(0,0,0,0.08),
+    inset 0 4px 0 rgba(255,255,255,0.7);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) rotateX(6deg);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.45),
+    inset 0 -6px 0 rgba(0,0,0,0.12),
+    inset 0 6px 0 rgba(255,255,255,0.8);
+}
+
+.card p {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #2ecc71;
+
+  background: linear-gradient(135deg, #2ecc71, #a8ff78);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 2px 0 rgba(0,0,0,0.25),
+    0 0 12px #2ecc71(54, 184, 37, 0.8);
+
+  transform: translateZ(25px);
+}
+
+.card button {
+  transform: translateZ(20px);
+}
+
+.card.out {
+  opacity: 0.5;
+  transform: none;
+}
